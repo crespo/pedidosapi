@@ -37,7 +37,7 @@ create table pedidos (
 
 create table item_pedido (
 	codigo serial not null primary key,
-	codigo_pedido bigint not null references pedido (codigo),
+	codigo_pedido bigint not null references pedidos (codigo),
 	codigo_produto bigint not null,
 	quantidade int not null,
 	valor_unitario decimal(16,2) not null
